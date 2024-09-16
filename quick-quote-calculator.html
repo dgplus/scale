@@ -1,0 +1,1100 @@
+<html>
+
+<head>
+    <meta charset=u tf-8>
+    <title>Quick Quote Calculator</title>
+
+
+    <style>
+        a.cta_button {
+            -moz-box-sizing: content-box !important;
+            -webkit-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+            vertical-align: middle
+        }
+        
+        .hs-breadcrumb-menu {
+            list-style-type: none;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px
+        }
+        
+        .hs-breadcrumb-menu-item {
+            float: left;
+            padding: 10px 0px 10px 10px
+        }
+        
+        .hs-breadcrumb-menu-divider:before {
+            content: '›';
+            padding-left: 10px
+        }
+        
+        .hs-featured-image-link {
+            border: 0
+        }
+        
+        .hs-featured-image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 50%
+        }
+        
+        @media (max-width: 568px) {
+            .hs-featured-image {
+                float: none;
+                margin: 0;
+                width: 100%;
+                max-width: 100%
+            }
+        }
+        
+        .hs-screen-reader-text {
+            clip: rect(1px, 1px, 1px, 1px);
+            height: 1px;
+            overflow: hidden;
+            position: absolute !important;
+            width: 1px
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://www.scalemicrogrids.com/hs-fs/hub/6836604/hub_generated/template_assets/32255445537/1701292211066/theme-scale-microgrid/css/main.min.css">
+
+    <style>
+        a.cta_button {
+            -moz-box-sizing: content-box !important;
+            -webkit-box-sizing: content-box !important;
+            box-sizing: content-box !important;
+            vertical-align: middle
+        }
+        
+        .hs-breadcrumb-menu {
+            list-style-type: none;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px
+        }
+        
+        .hs-breadcrumb-menu-item {
+            float: left;
+            padding: 10px 0px 10px 10px
+        }
+        
+        .hs-breadcrumb-menu-divider:before {
+            content: '›';
+            padding-left: 10px
+        }
+        
+        .hs-featured-image-link {
+            border: 0
+        }
+        
+        .hs-featured-image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 50%
+        }
+        
+        @media (max-width: 568px) {
+            .hs-featured-image {
+                float: none;
+                margin: 0;
+                width: 100%;
+                max-width: 100%
+            }
+        }
+        
+        .hs-screen-reader-text {
+            clip: rect(1px, 1px, 1px, 1px);
+            height: 1px;
+            overflow: hidden;
+            position: absolute !important;
+            width: 1px
+        }
+        
+        .header-contact .btn {
+            padding: 9px 34px;
+        }
+        
+        .scale--header.u-bg--black {
+            background-color: #141414;
+        }
+        
+        @media (min-width: 992px) {
+            .u-bg--black .nav .hs-menu-wrapper>ul ul {
+                background-color: transparent;
+                border: 1px solid #fff;
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .u-bg--black .nav .hs-menu-wrapper {
+                background-color: #141414;
+            }
+            .hamburger.is-active .hamburger-inner,
+            .hamburger.is-active .hamburger-inner:after,
+            .hamburger.is-active .hamburger-inner:before {
+                background-color: #83c341!important;
+            }
+        }
+        
+        .footer-menu ul {
+            list-style: none;
+            margin: 0;
+        }
+        
+        .footer-menu ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-menu ul li a {
+            font-size: 18px;
+            font-weight: 800;
+        }
+        
+        .footer-menu ul li a:hover {
+            color: #80C241;
+            text-decoration: none;
+        }
+        
+        .footer-lower {
+            padding-top: 40px;
+        }
+        
+        .u-bg--black .footer__social svg path {
+            fill: #fff!important;
+        }
+        
+        .u-bg--black .footer__social a:hover svg path {
+            fill: #80C241!important;
+        }
+        
+        .footer__social svg {
+            width: 30px;
+            height: 30px;
+        }
+        
+        @media (max-width: 767px) {
+            #scale-footer {
+                text-align: center;
+            }
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <script src="https://www.scalemicrogrids.com/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+    <script src="https://www.scalemicrogrids.com/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js"></script>
+    <script src="https://www.scalemicrogrids.com/hubfs/scale-2020/branding/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
+    <script src="https://www.scalemicrogrids.com/hs-fs/hub/6836604/hub_generated/template_assets/32424948414/1663777904532/theme-scale-microgrid/js/main.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <link rel="stylesheet" href="https://www.scalemicrogrids.com/hs-fs/hub/6836604/hub_generated/module_assets/32733025337/1701292167321/module_32733025337_header-internal.min.css">
+
+    <script data-hs-allowed="true" src="http://js.hsforms.net/forms/v2.js"></script>
+
+    <script data-hs-allowed="true">
+        var options = {
+            portalId: '6836604',
+            formId: '8b97e131-50d6-4a74-bd33-6ba93702dbc9',
+            formInstanceId: '8054',
+
+            pageId: '44307025491',
+
+            region: 'na1',
+
+            followUpEmailId: 45960712265,
+            followUpEmailCampaignId: 123751014,
+
+            pageName: "Pricing | Scale Microgrids",
+
+            inlineMessage: "<div style=\"text-align: center;\">Thanks! Check your inbox for more information. Make sure to check&nbsp;any automatically filtered folders such as promotions or spam<\/div>",
+
+
+            rawInlineMessage: "<div style=\"text-align: center;\">Thanks! Check your inbox for more information. Make sure to check&nbsp;any automatically filtered folders such as promotions or spam<\/div>",
+
+
+            hsFormKey: "b7775f6e662cf1bdc9e2951c10545dd6",
+
+
+            css: '',
+            target: '#hs_form_target_widget_1617307437786',
+
+
+
+
+
+            contentType: "standard-page",
+
+
+
+            formsBaseUrl: '/_hcms/forms/',
+
+
+
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                    if (tc.length !== 3) {
+                        continue;
+                    }
+                    targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                    });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.0.3/numeral.min.js" integrity="sha512-sMgx0iqtQVrEwuUPBeRZE42fOPWIRBRb3CLaoK5gilEnzKTkdJpjguVk5HpcmOgjyZlHSGqXXugNlaovRhYLsg==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+        <section id="widget_1617307437786" class="section u-bg--white u-pb--xl u-pt--xl u-bg--static  section--follow-header" style="background-image:url();">
+
+
+            <div class="container--xl">
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="pricing-calculator">
+                            <div class="pricing-calculator__inputs">
+                                <div class="form--steps">
+                                    <div data-step="1" class="form-step u-ta--center-align" style="display: block;">
+                                        <h3>What is your role?</h3>
+
+                                        <div class="d-flex flex-wrap justify-content-center form-step__small" id="js__role">
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Facility+Manager" data-var="Facility Manager">
+
+                                                <h4>
+            Facility Manager
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Energy+Manager" data-var="Energy Manager">
+
+                                                <h4>
+            Energy Manager
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Building+Owner+or+Executive" data-var="Building Owner or Executive">
+
+                                                <h4>
+            Building Owner or Executive
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Project+Developer" data-var="Project Developer">
+
+                                                <h4>
+            Project Developer
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Energy+Consultant" data-var="Energy Consultant">
+
+                                                <h4>
+            Energy Consultant
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Other" data-var="Other">
+
+                                                <h4>
+            Other
+        </h4>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div data-step="2" class="form-step u-ta--center-align">
+                                        <h3>What is your Building Type?</h3>
+
+                                        <div class="d-flex flex-wrap justify-content-center form-step__large" id="js__building">
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Higher+Education+Campus" data-var="Higher Education Campus">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/college.svg" alt="">
+
+                                                <h4>
+            Higher Education Campus
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Food+%26+Beverage+Manufacturer" data-var="Food &amp; Beverage Manufacturer">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/food.svg" alt="">
+
+                                                <h4>
+            Food &amp; Beverage Manufacturer
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Hospital" data-var="Hospital">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/hospital.svg" alt="">
+
+                                                <h4>
+            Hospital
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Hotel" data-var="Hotel">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/bed.svg" alt="">
+
+                                                <h4>
+            Hotel
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Super+Market" data-var="Super Market">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/apple.svg" alt="">
+
+                                                <h4>
+            Super Market
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Distribution+Center" data-var="Distribution Center">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/truck.svg" alt="">
+
+                                                <h4>
+            Distribution Center
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Multi-Family+Building" data-var="Multi-Family Building">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/Apartment.svg" alt="">
+
+                                                <h4>
+            Multi-Family Building
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Office" data-var="Office">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/Office.svg" alt="">
+
+                                                <h4>
+            Office
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Outpatient+Healthcare+Center" data-var="Outpatient Healthcare Center">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/doctor.svg" alt="">
+
+                                                <h4>
+            Outpatient Healthcare Center
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Refrigerated+Warehouse" data-var="Refrigerated Warehouse">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/snow.svg" alt="">
+
+                                                <h4>
+            Refrigerated Warehouse
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="EV+Charging+Station" data-var="EV Charging Station">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/powered.svg" alt="" width="30" height="31">
+
+                                                <h4>
+            EV Charging Station
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="School" data-var="School">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/bus.svg" alt="">
+
+                                                <h4>
+            School
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Warehouse" data-var="Warehouse">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/warehouse.svg" alt="">
+
+                                                <h4>
+            Warehouse
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Water+Treatment+Plant" data-var="Water Treatment Plant">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/drop.svg" alt="">
+
+                                                <h4>
+            Water Treatment Plant
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Other" data-var="Other">
+
+                                                <h4>
+            Other
+        </h4>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+                                    <div data-step="3" class="form-step u-ta--center-align">
+                                        <h3>Who is your Utility Provider?</h3>
+
+                                        <div class="d-flex flex-wrap justify-content-center form-step__small" id="js__utility">
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="PG%26E" data-var="PG&amp;E">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/powered.svg" alt="" width="30" height="31">
+
+                                                <h4>
+            PG&amp;E
+        </h4>
+                                            </a>
+
+
+
+                                            <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="SCE" data-var="SCE">
+
+                                                <img class="mb-2" src="https://www.scalemicrogrids.com/hubfs/scale-2020/icons/powered.svg" alt="" width="30" height="31">
+
+                                                <h4>
+            SCE
+        </h4>
+                                            </a>
+
+
+                                        </div>
+                                        <div class="mt-4">
+                                            Don't see your utility? Enter it <a target="_blank" href="/utility-request">here</a> and we will let you know when it is available.
+                                        </div>
+
+                                    </div>
+                                    <div data-step="4" class="form-step">
+                                        <h3 class="u-ta--center-align">Tell us about your Electricity Usage.</h3>
+                                        <div class="calc-input mb-4" id="electricity-use">
+                                            <label>Annual Electricity Use <span style="color:#e1e1e1;">kWh/year</span> <span style="color: red;">*</span></label>
+                                            <input name="electricity_use" type="number" value="0">
+                                        </div>
+                                        <div class="calc-input mb-4" id="peak-load">
+                                            <label>Annual Peak Load <span style="color:#e1e1e1;">kW</span> <span style="color: red;">*</span></label>
+                                            <input name="peak_load" type="number" value="0">
+                                        </div>
+                                        <div class="calc-input d-flex align-items-center mb-4" id="estimate">
+                                            <input name="estimate" type="checkbox">
+                                            <label>Estimate for me</label>
+                                        </div>
+                                        <div class="estimate-container u-pt--sm u-pb--sm" style="display: none;">
+                                            <h3 class=" u-ta--center-align">What is your Building Size?</h3>
+                                            <div class="d-flex flex-wrap  justify-content-center" id="js__size">
+
+
+
+
+                                                <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Small" data-var="Small">
+
+                                                    <h4>
+            Small
+        </h4>
+                                                </a>
+
+
+
+
+                                                <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Medium" data-var="Medium">
+
+                                                    <h4>
+            Medium
+        </h4>
+                                                </a>
+
+
+
+
+                                                <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Large" data-var="Large">
+
+                                                    <h4>
+            Large
+        </h4>
+                                                </a>
+
+
+
+
+                                                <a href="javascript:;" class="calc-input--block d-flex flex-column u-ta--center-align justify-content-center align-items-center p-2 m-2 " data-value="Extra-Large" data-var="Extra-Large">
+
+                                                    <h4>
+            Extra-Large
+        </h4>
+                                                </a>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="calc-input mt-4" id="js__resilience-level">
+                                            <label>Desired Resilience Level <span style="color: red;">*</span> <a class="tooltip has-fa" href="javascript:;"><i class="fa fa-info"></i><span class="tooltiptext wide">For example, if your facility's peak load is 1000 kW and you select a Desired Resilience Level of 50%, the system will be designed for a peak load of 500 kW during a power outage. Some buildings require 100% resilience because all load is critical, whereas other buildings are comfortable somewhat limiting their power needs during an outage so that their backup power system can be smaller and less expensive.</span></a></label>
+                                            <select name="resilience_level">
+                                                <option value="0">0</option>
+                                                <option value=".25">25% of peak load</option>
+                                                <option selected value=".50">50% of peak load</option>
+                                                <option value=".75">75% of peak load</option>
+                                                <option value="1">100% of peak load</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="u-ta--center-align calc-button-container u-pt--md">
+                                    <a href="javascript:;" class="calc-input btn btn--primary" id="calc-submit">
+                                Calculate Savings
+                            </a>
+
+                                </div>
+                                <div class="step-nav u-pt--md u-pb--md" data-step="1">
+                                    <div class="step-buttons">
+                                        <div class="d-flex justify-content-center u-pb--md">
+                                            <a href="javascript:;" class="btn btn--primary btn--previous mx-2" style="display: none;">Previous Step</a>
+                                            <a href="javascript:;" class="btn btn--primary btn--next mx-2 disabled">Next Step</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pricing-disclaimer mb-5">
+                                        <a class="tooltip" href="javascript:;">Disclaimer
+                                    <span class="tooltiptext wide">The design, savings, and prices shown here are our standard estimates. In our experience they are quite accurate, however, depending on your situation there can be additional factors that have an impact. As a next step we will perform a more detailed site assessment to generate a final design, savings, and price. This will include evaluating elements such as your utility service(s), switchboard(s), roof condition, and more.</span>
+                                </a>
+                                    </div>
+
+                                    <div class="status-bar">
+                                        <div class="status-bar__progress"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="pricing-calculator__results">
+                                <div class="cost-table">
+                                    <div class="cost-row cost-row--header">
+                                        <div></div>
+                                        <div class="u-bg--primary">
+                                            <p class="m-0"><strong>Scale's Microgrid-as-a-Service</strong></p>
+                                        </div>
+                                        <div>
+                                            <p class="m-0"><strong>Typical Diesel Backup Generator</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="cost-row cost-row--subhead" style="display: none;">
+                                        <div>
+                                            <p class="m-0"><strong>Costs</strong></p>
+                                        </div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="cost-row">
+                                        <div><span>Capital Cost</span></div>
+                                        <div><span>$0</span></div>
+                                        <div><span id="DieselGeneratorCapex"></span></div>
+                                    </div>
+                                    <div class="cost-row">
+                                        <div><span>O&amp;M Cost</span></div>
+                                        <div><span>$0</span></div>
+                                        <div><span id="DieselGeneratorOpex"></span></div>
+                                    </div>
+                                    <div class="cost-row">
+                                        <div><span>Microgrid Services Fee</span></div>
+                                        <div><span id="SMSMSACost"></span></div>
+                                        <div><span>$0</span></div>
+                                    </div>
+                                    <div class="cost-row cost-row--subhead" style="display: none;">
+                                        <div>
+                                            <p class="m-0"><strong>Savings</strong></p>
+                                        </div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="cost-row">
+                                        <div><span>Utility Bill Savings</span></div>
+                                        <div><span id="utilityBillSavings"></span></div>
+                                        <div><span>$0</span></div>
+                                    </div>
+                                    <div class="cost-row cost-row--total">
+                                        <div>
+                                            <p class="m-0"><strong>Net Annual Savings</strong></p>
+                                        </div>
+                                        <div><strong id="NetSavings"></strong></div>
+                                        <div><span id="DieselGeneratorOpex2"></span></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="pricing-disclaimer d-block mt-4">
+                                    <a class="tooltip" href="javascript:;">Disclaimer
+                                <span class="tooltiptext wide">The design, savings, and prices shown here are our standard estimates. In our experience they are quite accurate, however, depending on your situation there can be additional factors that have an impact. As a next step we will perform a more detailed site assessment to generate a final design, savings, and price. This will include evaluating elements such as your utility service(s), switchboard(s), roof condition, and more.</span>
+                            </a>
+                                </div>
+
+
+                                <div class="pricing-form u-pt--xl">
+
+
+                                    <div class="form form--secondary u-bg--secondary font-white u-bg--has-shadow has-padding  ">
+                                        <div class="form--header u-ta--center-align u-pb--sm">
+                                            <h3 class="mb-2">See the full system design.</h3>
+                                            <p><span>Enter your information to receive results by email.</span></p>
+                                            <p><img src="https://www.scalemicrogrids.com/hs-fs/hubfs/microgrid%20design.png?width=541&amp;name=microgrid%20design.png" alt="microgrid design" width="541" loading="lazy" style="width: 541px;" srcset="https://www.scalemicrogrids.com/hs-fs/hubfs/microgrid%20design.png?width=271&amp;name=microgrid%20design.png 271w, https://www.scalemicrogrids.com/hs-fs/hubfs/microgrid%20design.png?width=541&amp;name=microgrid%20design.png 541w, https://www.scalemicrogrids.com/hs-fs/hubfs/microgrid%20design.png?width=812&amp;name=microgrid%20design.png 812w, https://www.scalemicrogrids.com/hs-fs/hubfs/microgrid%20design.png?width=1082&amp;name=microgrid%20design.png 1082w, https://www.scalemicrogrids.com/hs-fs/hubfs/microgrid%20design.png?width=1353&amp;name=microgrid%20design.png 1353w, https://www.scalemicrogrids.com/hs-fs/hubfs/microgrid%20design.png?width=1623&amp;name=microgrid%20design.png 1623w" sizes="(max-width: 541px) 100vw, 541px"></p>
+                                            <p>&nbsp;</p>
+                                        </div>
+
+
+
+
+                                        <span id="hs_cos_wrapper_widget_1617307437786_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form">
+<div id="hs_form_target_widget_1617307437786"></div>
+
+
+
+
+
+
+
+
+</span>
+
+                                        <div class="u-ta--center-align mt-5 link--bold link--underline">
+                                            <a href="/pricing-calculator">Start Over</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pricing-detail u-pt--md" style="display: none!important;">
+                                    <h4 class="u-color--primary mb-3">Recommended Microgrid Design</h4>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="20" height="16" viewbox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4994 14.0003L12.0003 14.0019V13H8.00036V14.0066L6.501 14.0081C6.22538 14.0084 6.00194 14.2319 6.00163 14.5078L6.00006 15.4994C5.99975 15.7759 6.22413 16.0003 6.50069 16L13.4994 15.9919C13.775 15.9916 13.9985 15.7681 13.9988 15.4925L14 14.5009C14.0003 14.2244 13.776 14 13.4994 14.0003V14.0003ZM18.2875 0.835625C18.2056 0.353437 17.7809 0 17.2831 0H2.71665C2.21884 0 1.79415 0.353437 1.71228 0.835625C-0.103646 11.5363 0.00135367 10.8775 0.00104117 11C0.000103675 11.5412 0.447601 12 1.01978 12H18.9803C19.55 12 19.9962 11.545 19.9987 11.0066C19.9993 10.8791 20.1034 11.5363 18.2875 0.835625V0.835625ZM8.11974 2H11.88L12.1853 5H7.81443L8.11974 2ZM5.77069 10H2.22165L2.81571 6.5H6.12725L5.77069 10V10ZM6.27975 5H3.07008L3.57914 2H6.58506L6.27975 5V5ZM7.30537 10L7.66162 6.5H12.3381L12.6944 10H7.30537V10ZM13.4147 2H16.4206L16.9297 5H13.72L13.4147 2V2ZM14.2291 10L13.8728 6.5H17.1844L17.7784 10H14.2291Z" fill="#83C341" />
+                                            </svg>
+
+                                        </div>
+                                        <div>Solar Module Capacity</div>
+                                        <div><span id="SolarModuleCapacity"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="20" height="16" viewbox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4994 14.0003L12.0003 14.0019V13H8.00036V14.0066L6.501 14.0081C6.22538 14.0084 6.00194 14.2319 6.00163 14.5078L6.00006 15.4994C5.99975 15.7759 6.22413 16.0003 6.50069 16L13.4994 15.9919C13.775 15.9916 13.9985 15.7681 13.9988 15.4925L14 14.5009C14.0003 14.2244 13.776 14 13.4994 14.0003V14.0003ZM18.2875 0.835625C18.2056 0.353437 17.7809 0 17.2831 0H2.71665C2.21884 0 1.79415 0.353437 1.71228 0.835625C-0.103646 11.5363 0.00135367 10.8775 0.00104117 11C0.000103675 11.5412 0.447601 12 1.01978 12H18.9803C19.55 12 19.9962 11.545 19.9987 11.0066C19.9993 10.8791 20.1034 11.5363 18.2875 0.835625V0.835625ZM8.11974 2H11.88L12.1853 5H7.81443L8.11974 2ZM5.77069 10H2.22165L2.81571 6.5H6.12725L5.77069 10V10ZM6.27975 5H3.07008L3.57914 2H6.58506L6.27975 5V5ZM7.30537 10L7.66162 6.5H12.3381L12.6944 10H7.30537V10ZM13.4147 2H16.4206L16.9297 5H13.72L13.4147 2V2ZM14.2291 10L13.8728 6.5H17.1844L17.7784 10H14.2291Z" fill="#83C341" />
+                                            </svg>
+
+                                        </div>
+                                        <div>Solar Inverter Capacity</div>
+                                        <div><span id="SolarInverterCapacity"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="22" height="14" viewbox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17 1H3C1.89543 1 1 1.89543 1 3V11C1 12.1046 1.89543 13 3 13H17C18.1046 13 19 12.1046 19 11V3C19 1.89543 18.1046 1 17 1Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M19 5H20.5C20.6326 5 20.7598 5.05268 20.8536 5.14645C20.9473 5.24021 21 5.36739 21 5.5V8.5C21 8.63261 20.9473 8.75979 20.8536 8.85355C20.7598 8.94732 20.6326 9 20.5 9H19V5Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div>Battery Power</div>
+                                        <div><span id="BESSPower"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="22" height="14" viewbox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17 1H3C1.89543 1 1 1.89543 1 3V11C1 12.1046 1.89543 13 3 13H17C18.1046 13 19 12.1046 19 11V3C19 1.89543 18.1046 1 17 1Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M19 5H20.5C20.6326 5 20.7598 5.05268 20.8536 5.14645C20.9473 5.24021 21 5.36739 21 5.5V8.5C21 8.63261 20.9473 8.75979 20.8536 8.85355C20.7598 8.94732 20.6326 9 20.5 9H19V5Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div>Battery Energy Capacity</div>
+                                        <div><span id="BESSEnergyCapcity"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="17" height="22" viewbox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.05882 10.4118C10.4118 6.92941 8.05882 2.17647 6.88235 1C6.88235 4.57412 4.79647 6.57765 3.35294 8.05882C1.91059 9.54118 1 11.8706 1 13.9412C1 15.8133 1.7437 17.6087 3.06748 18.9325C4.39127 20.2563 6.18671 21 8.05882 21C9.93094 21 11.7264 20.2563 13.0502 18.9325C14.374 17.6087 15.1176 15.8133 15.1176 13.9412C15.1176 12.1388 13.8753 9.30588 12.7647 8.05882C10.6635 11.5882 9.48118 11.5882 8.05882 10.4118Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </div>
+                                        <div>Natural Gas Generator Size</div>
+                                        <div><span id="GeneratorCapacity"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.2 0H0.8C0.3575 0 0 0.3575 0 0.8V19.2C0 19.6425 0.3575 20 0.8 20H19.2C19.6425 20 20 19.6425 20 19.2V0.8C20 0.3575 19.6425 0 19.2 0ZM18.2 18.2H1.8V1.8H18.2V18.2ZM5.7 14.275V16.2C5.7 16.31 5.79 16.4 5.9 16.4H7.1C7.21 16.4 7.3 16.31 7.3 16.2V14.275C7.0475 14.3575 6.78 14.4 6.5 14.4C6.22 14.4 5.9525 14.355 5.7 14.275ZM7.3 9.325V3.8C7.3 3.69 7.21 3.6 7.1 3.6H5.9C5.79 3.6 5.7 3.69 5.7 3.8V9.325C5.9525 9.2425 6.22 9.2 6.5 9.2C6.78 9.2 7.0475 9.245 7.3 9.325ZM5.7 14.275C5.9525 14.3575 6.22 14.4 6.5 14.4C6.78 14.4 7.0475 14.355 7.3 14.275C8.345 13.9375 9.1 12.9575 9.1 11.8C9.1 10.6425 8.345 9.6625 7.3 9.325C7.0475 9.2425 6.78 9.2 6.5 9.2C6.22 9.2 5.9525 9.245 5.7 9.325C4.655 9.6625 3.9 10.6425 3.9 11.8C3.9 12.9575 4.655 13.9375 5.7 14.275ZM5.7025 11.3825C5.71 11.3675 5.72 11.3525 5.7275 11.3375V11.335L5.7575 11.29C5.76 11.285 5.7625 11.2825 5.765 11.2775C5.7725 11.265 5.7825 11.255 5.79 11.2425C5.7925 11.24 5.795 11.235 5.7975 11.2325C5.81 11.2175 5.82 11.205 5.8325 11.1925L5.84 11.185L5.87 11.155L5.88 11.145C5.8925 11.1325 5.905 11.1225 5.92 11.11C5.935 11.0975 5.9475 11.0875 5.9625 11.0775C5.9675 11.075 5.97 11.0725 5.975 11.07C5.9875 11.0625 5.9975 11.0525 6.01 11.045C6.0125 11.0425 6.0175 11.04 6.02 11.0375C6.035 11.0275 6.05 11.02 6.0675 11.01C6.07 11.0075 6.075 11.0075 6.0775 11.005C6.09 10.9975 6.1025 10.9925 6.1175 10.985L6.1325 10.9775C6.15 10.97 6.165 10.9625 6.1825 10.9575C6.2 10.95 6.2175 10.945 6.235 10.94C6.24 10.9375 6.245 10.9375 6.25 10.935C6.265 10.93 6.2775 10.9275 6.2925 10.925C6.2975 10.925 6.3 10.9225 6.305 10.9225C6.3225 10.9175 6.3425 10.915 6.36 10.9125C6.365 10.9125 6.3675 10.9125 6.3725 10.91C6.3875 10.9075 6.4025 10.9075 6.4175 10.905H6.4325C6.4525 10.905 6.47 10.9025 6.49 10.9025C6.51 10.9025 6.5275 10.9025 6.5475 10.905H6.5625C6.5775 10.905 6.5925 10.9075 6.6075 10.91C6.6125 10.91 6.615 10.91 6.62 10.9125C6.6375 10.915 6.6575 10.9175 6.675 10.9225C6.68 10.9225 6.6825 10.925 6.6875 10.925C6.7025 10.9275 6.7175 10.9325 6.73 10.935C6.735 10.9375 6.74 10.9375 6.745 10.94C6.7625 10.945 6.78 10.95 6.7975 10.9575C6.815 10.9625 6.83 10.97 6.8475 10.9775L6.8625 10.985C6.875 10.99 6.89 10.9975 6.9025 11.005C6.905 11.0075 6.91 11.0075 6.9125 11.01C6.9275 11.0175 6.945 11.0275 6.96 11.0375C6.9625 11.04 6.9675 11.0425 6.97 11.045C6.9825 11.0525 6.995 11.06 7.005 11.07C7.01 11.0725 7.0125 11.075 7.0175 11.0775C7.0325 11.0875 7.0475 11.1 7.06 11.11C7.0725 11.12 7.0875 11.1325 7.1 11.145L7.11 11.155L7.14 11.185L7.1475 11.1925C7.16 11.205 7.1725 11.22 7.1825 11.2325C7.185 11.235 7.1875 11.24 7.19 11.2425C7.2 11.2525 7.2075 11.265 7.215 11.2775C7.2175 11.2825 7.22 11.285 7.2225 11.29L7.2525 11.335C7.2525 11.335 7.2525 11.3375 7.255 11.3375C7.33836 11.4774 7.38241 11.6372 7.3825 11.8C7.3825 11.95 7.345 12.0925 7.28 12.2175C7.2725 12.2325 7.2625 12.2475 7.255 12.2625C7.255 12.2625 7.255 12.265 7.2525 12.265L7.2225 12.31C7.22 12.315 7.2175 12.3175 7.215 12.3225C7.2075 12.335 7.1975 12.345 7.19 12.3575C7.1875 12.36 7.185 12.365 7.1825 12.3675C7.17 12.3825 7.16 12.395 7.1475 12.4075L7.14 12.415L7.11 12.445L7.1 12.455C7.0875 12.4675 7.075 12.4775 7.06 12.49C7.045 12.5025 7.0325 12.5125 7.0175 12.5225C7.0125 12.525 7.01 12.5275 7.005 12.53C6.9925 12.5375 6.9825 12.5475 6.97 12.555C6.9675 12.5575 6.9625 12.56 6.96 12.5625C6.945 12.5725 6.93 12.58 6.9125 12.59C6.91 12.5925 6.905 12.5925 6.9025 12.595C6.89 12.6025 6.8775 12.6075 6.8625 12.615L6.8475 12.6225C6.83 12.63 6.815 12.6375 6.7975 12.6425C6.78 12.65 6.7625 12.655 6.745 12.66C6.74 12.6625 6.735 12.6625 6.73 12.665C6.715 12.67 6.7025 12.6725 6.6875 12.675C6.6825 12.675 6.68 12.6775 6.675 12.6775C6.6575 12.6825 6.6375 12.685 6.62 12.6875C6.615 12.6875 6.6125 12.6875 6.6075 12.69C6.5925 12.6925 6.5775 12.6925 6.5625 12.695H6.5475C6.5275 12.695 6.51 12.6975 6.49 12.6975C6.47 12.6975 6.4525 12.6975 6.4325 12.695H6.4175C6.4025 12.695 6.3875 12.6925 6.3725 12.69C6.3675 12.69 6.365 12.69 6.36 12.6875C6.3425 12.685 6.3225 12.6825 6.305 12.6775C6.3 12.6775 6.2975 12.675 6.2925 12.675C6.2775 12.6725 6.2625 12.6675 6.25 12.665C6.245 12.6625 6.24 12.6625 6.235 12.66C6.2175 12.655 6.2 12.65 6.1825 12.6425C6.165 12.6375 6.15 12.63 6.1325 12.6225L6.1175 12.615C6.105 12.61 6.09 12.6025 6.0775 12.595C6.075 12.5925 6.07 12.5925 6.0675 12.59C6.0525 12.5825 6.035 12.5725 6.02 12.5625C6.0175 12.56 6.0125 12.5575 6.01 12.555C5.9975 12.5475 5.985 12.54 5.975 12.53C5.97 12.5275 5.9675 12.525 5.9625 12.5225C5.9475 12.5125 5.9325 12.5 5.92 12.49C5.9075 12.48 5.8925 12.4675 5.88 12.455L5.87 12.445L5.84 12.415L5.8325 12.4075C5.82 12.395 5.8075 12.38 5.7975 12.3675C5.795 12.365 5.7925 12.36 5.79 12.3575C5.78 12.3475 5.7725 12.335 5.765 12.3225C5.7625 12.3175 5.76 12.315 5.7575 12.31L5.7275 12.265V12.2625C5.7175 12.2475 5.71 12.2325 5.7025 12.2175C5.6375 12.0925 5.6 11.95 5.6 11.8C5.6 11.65 5.6375 11.5075 5.7025 11.3825ZM12.7 10.675V16.2C12.7 16.31 12.79 16.4 12.9 16.4H14.1C14.21 16.4 14.3 16.31 14.3 16.2V10.675C14.0475 10.7575 13.78 10.8 13.5 10.8C13.22 10.8 12.9525 10.755 12.7 10.675ZM14.3 5.725V3.8C14.3 3.69 14.21 3.6 14.1 3.6H12.9C12.79 3.6 12.7 3.69 12.7 3.8V5.725C12.9525 5.6425 13.22 5.6 13.5 5.6C13.78 5.6 14.0475 5.645 14.3 5.725ZM12.7 10.675C12.9525 10.7575 13.22 10.8 13.5 10.8C13.78 10.8 14.0475 10.755 14.3 10.675C15.345 10.3375 16.1 9.3575 16.1 8.2C16.1 7.0425 15.345 6.0625 14.3 5.725C14.0475 5.6425 13.78 5.6 13.5 5.6C13.22 5.6 12.9525 5.645 12.7 5.725C11.655 6.0625 10.9 7.0425 10.9 8.2C10.9 9.3575 11.655 10.3375 12.7 10.675ZM12.7025 7.7825C12.71 7.7675 12.72 7.7525 12.7275 7.7375V7.735L12.7575 7.69C12.76 7.685 12.7625 7.6825 12.765 7.6775C12.7725 7.665 12.7825 7.655 12.79 7.6425C12.7925 7.64 12.795 7.635 12.7975 7.6325C12.81 7.6175 12.82 7.605 12.8325 7.5925L12.84 7.585L12.87 7.555L12.88 7.545C12.8925 7.5325 12.905 7.5225 12.92 7.51C12.935 7.4975 12.9475 7.4875 12.9625 7.4775C12.9675 7.475 12.97 7.4725 12.975 7.47C12.9875 7.4625 12.9975 7.4525 13.01 7.445C13.0125 7.4425 13.0175 7.44 13.02 7.4375C13.035 7.4275 13.05 7.42 13.0675 7.41C13.07 7.4075 13.075 7.4075 13.0775 7.405C13.09 7.3975 13.1025 7.3925 13.1175 7.385L13.1325 7.3775C13.15 7.37 13.165 7.3625 13.1825 7.3575C13.2 7.35 13.2175 7.345 13.235 7.34C13.24 7.3375 13.245 7.3375 13.25 7.335C13.265 7.33 13.2775 7.3275 13.2925 7.325C13.2975 7.325 13.3 7.3225 13.305 7.3225C13.3225 7.3175 13.3425 7.315 13.36 7.3125C13.365 7.3125 13.3675 7.3125 13.3725 7.31C13.3875 7.3075 13.4025 7.3075 13.4175 7.305H13.4325C13.4525 7.305 13.47 7.3025 13.49 7.3025C13.51 7.3025 13.5275 7.3025 13.5475 7.305H13.5625C13.5775 7.305 13.5925 7.3075 13.6075 7.31C13.6125 7.31 13.615 7.31 13.62 7.3125C13.6375 7.315 13.6575 7.3175 13.675 7.3225C13.68 7.3225 13.6825 7.325 13.6875 7.325C13.7025 7.3275 13.7175 7.3325 13.73 7.335C13.735 7.3375 13.74 7.3375 13.745 7.34C13.7625 7.345 13.78 7.35 13.7975 7.3575C13.815 7.3625 13.83 7.37 13.8475 7.3775L13.8625 7.385C13.875 7.39 13.89 7.3975 13.9025 7.405C13.905 7.4075 13.91 7.4075 13.9125 7.41C13.9275 7.4175 13.945 7.4275 13.96 7.4375C13.9625 7.44 13.9675 7.4425 13.97 7.445C13.9825 7.4525 13.995 7.46 14.005 7.47C14.01 7.4725 14.0125 7.475 14.0175 7.4775C14.0325 7.4875 14.0475 7.5 14.06 7.51C14.0725 7.52 14.0875 7.5325 14.1 7.545L14.11 7.555L14.14 7.585L14.1475 7.5925C14.16 7.605 14.1725 7.62 14.1825 7.6325C14.185 7.635 14.1875 7.64 14.19 7.6425C14.2 7.6525 14.2075 7.665 14.215 7.6775C14.2175 7.6825 14.22 7.685 14.2225 7.69L14.2525 7.735V7.7375C14.3359 7.87738 14.3799 8.03717 14.38 8.2C14.38 8.35 14.3425 8.4925 14.2775 8.6175C14.27 8.6325 14.26 8.6475 14.2525 8.6625V8.665L14.2225 8.71C14.22 8.715 14.2175 8.7175 14.215 8.7225C14.2075 8.735 14.1975 8.745 14.19 8.7575C14.1875 8.76 14.185 8.765 14.1825 8.7675C14.17 8.7825 14.16 8.795 14.1475 8.8075L14.14 8.815L14.11 8.845L14.1 8.855C14.0875 8.8675 14.075 8.8775 14.06 8.89C14.045 8.9025 14.0325 8.9125 14.0175 8.9225C14.0125 8.925 14.01 8.9275 14.005 8.93C13.9925 8.9375 13.9825 8.9475 13.97 8.955C13.9675 8.9575 13.9625 8.96 13.96 8.9625C13.945 8.9725 13.93 8.98 13.9125 8.99C13.91 8.9925 13.905 8.9925 13.9025 8.995C13.89 9.0025 13.8775 9.0075 13.8625 9.015L13.8475 9.0225C13.83 9.03 13.815 9.0375 13.7975 9.0425C13.78 9.05 13.7625 9.055 13.745 9.06C13.74 9.0625 13.735 9.0625 13.73 9.065C13.715 9.07 13.7025 9.0725 13.6875 9.075C13.6825 9.075 13.68 9.0775 13.675 9.0775C13.6575 9.0825 13.6375 9.085 13.62 9.0875C13.615 9.0875 13.6125 9.0875 13.6075 9.09C13.5925 9.0925 13.5775 9.0925 13.5625 9.095H13.5475C13.5275 9.095 13.51 9.0975 13.49 9.0975C13.47 9.0975 13.4525 9.0975 13.4325 9.095H13.4175C13.4025 9.095 13.3875 9.0925 13.3725 9.09C13.3675 9.09 13.365 9.09 13.36 9.0875C13.3425 9.085 13.3225 9.0825 13.305 9.0775C13.3 9.0775 13.2975 9.075 13.2925 9.075C13.2775 9.0725 13.2625 9.0675 13.25 9.065C13.245 9.0625 13.24 9.0625 13.235 9.06C13.2175 9.055 13.2 9.05 13.1825 9.0425C13.165 9.0375 13.15 9.03 13.1325 9.0225L13.1175 9.015C13.105 9.01 13.09 9.0025 13.0775 8.995C13.075 8.9925 13.07 8.9925 13.0675 8.99C13.0525 8.9825 13.035 8.9725 13.02 8.9625C13.0175 8.96 13.0125 8.9575 13.01 8.955C12.9975 8.9475 12.985 8.94 12.975 8.93C12.97 8.9275 12.9675 8.925 12.9625 8.9225C12.9475 8.9125 12.9325 8.9 12.92 8.89C12.9075 8.88 12.8925 8.8675 12.88 8.855L12.87 8.845L12.84 8.815L12.8325 8.8075C12.82 8.795 12.8075 8.78 12.7975 8.7675C12.795 8.765 12.7925 8.76 12.79 8.7575C12.78 8.7475 12.7725 8.735 12.765 8.7225C12.7625 8.7175 12.76 8.715 12.7575 8.71L12.7275 8.665V8.6625C12.7175 8.6475 12.71 8.6325 12.7025 8.6175C12.6375 8.4925 12.6 8.35 12.6 8.2C12.6 8.05 12.6375 7.9075 12.7025 7.7825Z" fill="#83C341" />
+                                            </svg>
+
+
+                                        </div>
+                                        <div>Microgrid Switchboard, Controls, Protections</div>
+                                        <div><span> Included</span></div>
+                                    </div>
+                                </div>
+                                <div class="pricing-detail u-pt--md" style="display: none!important;">
+                                    <h4 class="u-color--primary mb-3">Calculation Inputs</h4>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="20" height="16" viewbox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4994 14.0003L12.0003 14.0019V13H8.00036V14.0066L6.501 14.0081C6.22538 14.0084 6.00194 14.2319 6.00163 14.5078L6.00006 15.4994C5.99975 15.7759 6.22413 16.0003 6.50069 16L13.4994 15.9919C13.775 15.9916 13.9985 15.7681 13.9988 15.4925L14 14.5009C14.0003 14.2244 13.776 14 13.4994 14.0003V14.0003ZM18.2875 0.835625C18.2056 0.353437 17.7809 0 17.2831 0H2.71665C2.21884 0 1.79415 0.353437 1.71228 0.835625C-0.103646 11.5363 0.00135367 10.8775 0.00104117 11C0.000103675 11.5412 0.447601 12 1.01978 12H18.9803C19.55 12 19.9962 11.545 19.9987 11.0066C19.9993 10.8791 20.1034 11.5363 18.2875 0.835625V0.835625ZM8.11974 2H11.88L12.1853 5H7.81443L8.11974 2ZM5.77069 10H2.22165L2.81571 6.5H6.12725L5.77069 10V10ZM6.27975 5H3.07008L3.57914 2H6.58506L6.27975 5V5ZM7.30537 10L7.66162 6.5H12.3381L12.6944 10H7.30537V10ZM13.4147 2H16.4206L16.9297 5H13.72L13.4147 2V2ZM14.2291 10L13.8728 6.5H17.1844L17.7784 10H14.2291Z" fill="#83C341" />
+                                            </svg>
+
+                                        </div>
+                                        <div>Building Type</div>
+                                        <div><span id="price_inputs-building"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="20" height="16" viewbox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.4994 14.0003L12.0003 14.0019V13H8.00036V14.0066L6.501 14.0081C6.22538 14.0084 6.00194 14.2319 6.00163 14.5078L6.00006 15.4994C5.99975 15.7759 6.22413 16.0003 6.50069 16L13.4994 15.9919C13.775 15.9916 13.9985 15.7681 13.9988 15.4925L14 14.5009C14.0003 14.2244 13.776 14 13.4994 14.0003V14.0003ZM18.2875 0.835625C18.2056 0.353437 17.7809 0 17.2831 0H2.71665C2.21884 0 1.79415 0.353437 1.71228 0.835625C-0.103646 11.5363 0.00135367 10.8775 0.00104117 11C0.000103675 11.5412 0.447601 12 1.01978 12H18.9803C19.55 12 19.9962 11.545 19.9987 11.0066C19.9993 10.8791 20.1034 11.5363 18.2875 0.835625V0.835625ZM8.11974 2H11.88L12.1853 5H7.81443L8.11974 2ZM5.77069 10H2.22165L2.81571 6.5H6.12725L5.77069 10V10ZM6.27975 5H3.07008L3.57914 2H6.58506L6.27975 5V5ZM7.30537 10L7.66162 6.5H12.3381L12.6944 10H7.30537V10ZM13.4147 2H16.4206L16.9297 5H13.72L13.4147 2V2ZM14.2291 10L13.8728 6.5H17.1844L17.7784 10H14.2291Z" fill="#83C341" />
+                                            </svg>
+
+                                        </div>
+                                        <div>Utility Provider</div>
+                                        <div><span id="price_inputs-utility"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="22" height="14" viewbox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17 1H3C1.89543 1 1 1.89543 1 3V11C1 12.1046 1.89543 13 3 13H17C18.1046 13 19 12.1046 19 11V3C19 1.89543 18.1046 1 17 1Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M19 5H20.5C20.6326 5 20.7598 5.05268 20.8536 5.14645C20.9473 5.24021 21 5.36739 21 5.5V8.5C21 8.63261 20.9473 8.75979 20.8536 8.85355C20.7598 8.94732 20.6326 9 20.5 9H19V5Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div>Annual Peak Load</div>
+                                        <div><span id="price_inputs-peak_load"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="22" height="14" viewbox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17 1H3C1.89543 1 1 1.89543 1 3V11C1 12.1046 1.89543 13 3 13H17C18.1046 13 19 12.1046 19 11V3C19 1.89543 18.1046 1 17 1Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14 5V9" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M19 5H20.5C20.6326 5 20.7598 5.05268 20.8536 5.14645C20.9473 5.24021 21 5.36739 21 5.5V8.5C21 8.63261 20.9473 8.75979 20.8536 8.85355C20.7598 8.94732 20.6326 9 20.5 9H19V5Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div>Annual Electricity Usage</div>
+                                        <div><span id="price_inputs-electricity_use"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="17" height="22" viewbox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.05882 10.4118C10.4118 6.92941 8.05882 2.17647 6.88235 1C6.88235 4.57412 4.79647 6.57765 3.35294 8.05882C1.91059 9.54118 1 11.8706 1 13.9412C1 15.8133 1.7437 17.6087 3.06748 18.9325C4.39127 20.2563 6.18671 21 8.05882 21C9.93094 21 11.7264 20.2563 13.0502 18.9325C14.374 17.6087 15.1176 15.8133 15.1176 13.9412C15.1176 12.1388 13.8753 9.30588 12.7647 8.05882C10.6635 11.5882 9.48118 11.5882 8.05882 10.4118Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </div>
+                                        <div>Building Size (if selected)</div>
+                                        <div><span id="price_inputs-building_size"></span></div>
+                                    </div>
+                                    <div class="pricing-detail__row">
+                                        <div>
+                                            <svg width="17" height="22" viewbox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.05882 10.4118C10.4118 6.92941 8.05882 2.17647 6.88235 1C6.88235 4.57412 4.79647 6.57765 3.35294 8.05882C1.91059 9.54118 1 11.8706 1 13.9412C1 15.8133 1.7437 17.6087 3.06748 18.9325C4.39127 20.2563 6.18671 21 8.05882 21C9.93094 21 11.7264 20.2563 13.0502 18.9325C14.374 17.6087 15.1176 15.8133 15.1176 13.9412C15.1176 12.1388 13.8753 9.30588 12.7647 8.05882C10.6635 11.5882 9.48118 11.5882 8.05882 10.4118Z" stroke="#83C341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                        </div>
+                                        <div>Desired Resilience</div>
+                                        <div><span id="price_inputs-resilience_level"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        
+            <script>
+        $(function() {
+
+            $('#calc-submit').click(function(e) {
+                e.preventDefault();
+                const price_inputs = new Object();
+                price_inputs.building = $('div#js__building a.selected').attr("data-var");
+                price_inputs.utility = $('div#js__utility a.selected').attr("data-var");
+                price_inputs.electricity_use = $('input[name="electricity_use"]').val();
+                price_inputs.peak_load = $('input[name="peak_load"]').val();
+                price_inputs.resilience_level = $('select[name="resilience_level"]').val();
+                price_inputs.building_size = $('div#js__size a.selected').length ? $('div#js__size a.selected').attr("data-var") : "na";
+                //console.log(price_inputs.utility);
+
+                const Http = new XMLHttpRequest();
+                const url = 'https://m6fn46yntc.execute-api.us-east-2.amazonaws.com/default/SMG_Calculator';
+                Http.open("POST", url);
+                Http.setRequestHeader("Content-Type", "application/json");
+                Http.send(JSON.stringify(price_inputs));
+                Http.onreadystatechange = (e) => {
+                    if (Http.readyState === XMLHttpRequest.DONE) {
+                        const response = JSON.parse(Http.responseText);
+                        //console.log(response.data);
+                        var data = response.data;
+
+                        $('.pricing-calculator__results,.pricing-calculator__inputs').toggle();
+
+                        /* Cost/Savings */
+                        var DieselGeneratorCapex = "-" + numeral(data.DieselGeneratorCapex).format('$0,0');
+                        var DieselGeneratorOpex = "-" + numeral(data.DieselGeneratorOpex).format('$0,0');
+                        var SMSMSACost = "-" + numeral(data.SMSMSACost).format('$0,0');
+                        var utilityBillSavings = "+" + numeral(data.utilityBillSavings).format('$0,0');
+                        var NetSavings = "+" + numeral(data.NetSavings).format('$0,0');
+
+                        $('#DieselGeneratorCapex').text(DieselGeneratorCapex);
+                        $('#DieselGeneratorOpex').text(DieselGeneratorOpex);
+                        $('#SMSMSACost').text(SMSMSACost);
+                        $('#utilityBillSavings').text(utilityBillSavings);
+                        $('#NetSavings').text(NetSavings);
+                        $('#DieselGeneratorOpex2').text(DieselGeneratorOpex);
+
+                        $('input[name="diesel_generator_capex"]').val(DieselGeneratorCapex).change();
+                        $('input[name="diesel_generator_opex"]').val(DieselGeneratorOpex).change();
+                        $('input[name="sms_msa_cost"]').val(SMSMSACost).change();
+                        $('input[name="utility_bill_savings"]').val(utilityBillSavings).change();
+                        $('input[name="net_savings"]').val(NetSavings).change();
+
+                        /* Recommended Microgrid Design */
+                        var SolarModuleCapacity = numeral(data.SolarModuleCapacity).format('0,0') + " kW-DC";
+                        var SolarInverterCapacity = numeral(data.SolarInverterCapacity).format('0,0') + " kW-AC";
+                        var BESSPower = numeral(data.BESSPower).format('0,0') + "kW";
+                        var BESSEnergyCapcity = numeral(data.BESSEnergyCapcity).format('0,0') + " kWh";
+                        var GeneratorCapacity = numeral(data.GeneratorCapacity).format('0,0') + " kW";
+
+                        $('#SolarModuleCapacity').text(SolarModuleCapacity);
+                        $('#SolarInverterCapacity').text(SolarInverterCapacity);
+                        $('#BESSPower').text(BESSPower);
+                        $('#BESSEnergyCapcity').text(BESSEnergyCapcity);
+                        $('#GeneratorCapacity').text(GeneratorCapacity);
+
+                        $('input[name="solar_module_capacity"]').val(SolarModuleCapacity).change();
+                        $('input[name="solar_inverter_capacity"]').val(SolarInverterCapacity).change();
+                        $('input[name="bess_power"]').val(BESSPower).change();
+                        $('input[name="bess_energy_capcity"]').val(BESSEnergyCapcity).change();
+                        $('input[name="generator_capacity"]').val(GeneratorCapacity).change();
+
+                        /* Inputs */
+                        var Role = $('div#js__role a.selected').attr("data-var");
+                        var Building = price_inputs.building;
+                        var Utility = price_inputs.utility;
+                        var PeakLoad = numeral(price_inputs.peak_load).format('0,0');
+                        var ElectricityUse = numeral(price_inputs.electricity_use).format('0,0');
+                        var BuildingSize = price_inputs.building_size;
+                        var ReslienceLevel = numeral(price_inputs.resilience_level).format('0%');
+
+                        $('#price_inputs-building').text(Building);
+                        $('#price_inputs-utility').text(Utility);
+                        $('#price_inputs-peak_load').text(PeakLoad);
+                        $('#price_inputs-electricity_use').text(ElectricityUse);
+                        $('#price_inputs-building_size').text(BuildingSize);
+                        $('#price_inputs-resilience_level').text(ReslienceLevel);
+
+                        $('input[name="price_input_role"]').val(Role).change();
+                        $('input[name="price_input_building"]').val(Building).change();
+                        $('input[name="price_input_utility"]').val(Utility).change();
+                        $('input[name="price_input_peak_load"]').val(PeakLoad).change();
+                        $('input[name="price_input_electricity_use"]').val(ElectricityUse).change();
+                        $('input[name="price_input_building_size"]').val(BuildingSize).change();
+                        $('input[name="price_input_resilience_level"]').val(ReslienceLevel).change();
+
+                    }
+
+                }
+
+            });
+
+        });
+
+        $(function() {
+            $('.step-nav a').click(function() {
+                if ($(this).hasClass("disabled")) {
+                    //console.log("disabled");
+                    return false;
+                }
+
+                var stepNav = parseInt($('.step-nav').attr("data-step"));
+                if ($(this).hasClass("btn--next")) {
+                    stepNav++
+                } else {
+                    stepNav--
+                }
+
+                $('.status-bar__progress').css("width", 25 * stepNav + "%");
+
+
+                $('.step-nav').attr("data-step", stepNav);
+                $('.form-step').hide();
+                $('.form-step[data-step="' + stepNav + '"]').show();
+
+                if ($('.form-step[data-step="' + stepNav + '"] .calc-input--block.selected').length > 0) {
+                    $('.btn--next').removeClass("disabled");
+                } else {
+                    $('.btn--next').addClass("disabled");
+                }
+
+
+                if (stepNav == 1) {
+                    $('.step-nav a.btn--previous').hide();
+                    $('.pricing-disclaimer').show();
+                } else {
+                    $('.step-nav a.btn--previous').show();
+                    $('.pricing-disclaimer').hide()
+                }
+
+                if (stepNav == 4) {
+                    $('.step-nav a.btn--next, .step-buttons').hide();
+                    $('.calc-button-container').show();
+                } else {
+                    $('.step-nav a.btn--next').show();
+                    $('.calc-button-container').hide();
+                }
+            });
+
+            $('.calc-input--block').click(function() {
+                $(this).addClass("selected").siblings().removeClass("selected");
+                $('.btn--next').removeClass("disabled");
+            });
+
+            var originalElectricity = $('input[name="electricity_use"]').val();
+            var originalPeakLoad = $('input[name="peak_load"]').val();
+
+            $('div#js__size a').click(function() {
+                if ($('input[name="estimate"]').prop('checked')) {
+                    var type = $('div#js__building a.selected').attr("data-value");
+                    var size = $('div#js__size a.selected').attr("data-value");
+                    getEstimate(type, size);
+                }
+
+            });
+
+            $('input[name="estimate"]').change(function() {
+                if (!$(this).prop('checked')) {
+                    $('input[name="electricity_use"]').val(originalElectricity);
+                    $('input[name="peak_load"]').val(originalPeakLoad);
+
+                }
+                $('.estimate-container').toggle();
+            });
+        });
+
+        function getEstimate(type, size) {
+            const HttpEstimates = new XMLHttpRequest();
+            const urlEstimates = 'https://api.hubapi.com/hubdb/api/v2/tables/4024888/rows?portalId=6836604&building_type=' + type + '&building_size=' + size;
+            HttpEstimates.open("GET", urlEstimates);
+            HttpEstimates.send();
+            HttpEstimates.onreadystatechange = (e) => {
+                if (HttpEstimates.readyState === XMLHttpRequest.DONE) {
+                    const estimates_table = JSON.parse(HttpEstimates.responseText).objects;
+
+                    var estimates_data = [];
+                    var estimates_index = [];
+
+                    for (var estimates_row, i = 0; estimates_row = estimates_table[i++];) {
+                        var name = estimates_row.values[2];
+                        var electricity = estimates_row.values[4];
+                        var consumption = estimates_row.values[5];
+
+                        estimates_index.push(name);
+                        estimates_data.push({
+                            electricity, consumption
+                        });
+                    }
+                    //console.log(estimates_index);
+                    //console.log(estimates_data[0].electricity);
+                    //console.log(estimates_data[0].consumption);
+                    $('input[name="electricity_use"]').val(estimates_data[0].electricity);
+                    $('input[name="peak_load"]').val(estimates_data[0].consumption);
+                }
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
